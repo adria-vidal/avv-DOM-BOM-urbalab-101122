@@ -1,7 +1,18 @@
-const selector = document.getElementById('selector');
-const tag = document.getElementById('tag');
-const value = document.getElementById('value');
-const name = document.getElementById('name');
-const cuadrado = document.getElementsByClassName('cuadrado');
+function selector(id) {
+    console.log(document.getElementById(id).innerHTML);
+    let element = document.getElementById(id);
+   
 
-selector.innerHTML = 
+
+
+
+    document.getElementById('selector').innerHTML = element;
+    document.getElementById('valor').innerHTML = element;
+    document.getElementById('tag').innerHTML = element;
+    document.getElementById('name').innerHTML = element;
+
+
+    
+
+
+}
