@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #298584;
+    background: linear-gradient(0deg, #37a09e 0%, #96e4ba 100%);
+}
+
+.selected {
+    display: none;
+}
+
+#collapseExample .card p {
+    width: 100%;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrap #infoLateral {
+    background-color: white;
+    display: none;
+}
+
+.wrap .buscaminas {
+    width: 100vw;
+    height: 100vw;
+    border-radius: 1em; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrap .buscaminas .cuadrado {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid rgb(167, 161, 161);
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .buscaminas .cuadrado p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.wrap .buscaminas .cuadrado img {
+    width: 75%;
+}
+
+.wrap .buscaminas .cuadrado .tapa {
+    position: absolute;
+    border-width: 5px;
+    border-style: outset;
+    border-color: rgb(207, 195, 195);
+    border-top-color: white;
+    border-left-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 189, 189);
+}
+
+@media (min-width: 576px) {
+    .wrap .buscaminas {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .wrap .buscaminas .cuadrado {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    #desplegable {
+        display: none;
+    }
+
+    .wrap {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .wrap #infoLateral {
+        display: block;
+        order: 1;
+        justify-content: flex-start;
+        height: 100%;
+        width: 30vw;
+    }
+
+    .wrap .buscaminas {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .wrap .buscaminas .cuadrado {
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrap #infoLateral {
+        width: 25vw;
+    }
+
+    .wrap .buscaminas {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .wrap .buscaminas .cuadrado {
+        width: 6vw;
+        height: 6vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrap #infoLateral {
+        width: 25vw;
+    }
+
+    .wrap .buscaminas {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .wrap .buscaminas .cuadrado {
+        width: 4vw;
+        height: 4vw;
+    }
+}
